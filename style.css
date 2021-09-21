@@ -1,0 +1,28 @@
+<style>
+  .special {
+      color: red;
+  }
+  .special2 {
+      background: black;
+    }
+
+a{
+    color: black;
+}
+
+section a {
+color: green;
+}
+.container { color: orange;
+}
+
+p { font-size: 12px;}
+
+p{font: 32px;}
+
+nav li a { 
+    color: magenta;
+}
+ p { font-size: 50px !important;
+ 
+</style>
