@@ -1,28 +1,99 @@
-<style>
-  .special {
-      color: red;
-  }
-  .special2 {
-      background: black;
-    }
 
-a{
-    color: black;
+h1 {
+    text-align: center;
+    margin: auto;
+    outline: black;
+    outline-style: double;
+    outline-width: 8px;
+    font-style: oblique;
+    font-size: 50px;
+    color:aqua
+}
+h2{
+    font-size:30px;
 }
 
-section a {
-color: green;
-}
-.container { color: orange;
+.nest {
+font-family: 'Courier New', Courier, monospace;
+color: aquamarine;
+background-color: rgb(228, 222, 215);
+
 }
 
-p { font-size: 12px;}
-
-p{font: 32px;}
-
-nav li a { 
-    color: magenta;
+.tags {
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(148, 250, 216);
+    background-color: rgb(229, 212, 190);
+    ;
 }
- p { font-size: 50px !important;}
+
+.media {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(178, 241, 220);
+    background-color: tan;  
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h3 {
+    border-style: groove;
+    border-color: aqua;
+    border-left: dotted;
+    border-right: dotted;
+    text-align: center;
+}
+blockquote{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center
+}
+
+h4 { 
+    background-color: aqua;
+    width:120px;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.example h3 {
+    color: aqua;
  
-</style>
+}
+
+.reasons li {
+    color:aqua;
+
+}
+
+.names ul {
+color:aqua
+}
+
+#anim {
+    animation-name: colorful;
+    animation-duration: 4s;
+
+}
+
+.header
+
+{
+    background-color:black;
+    animation-name: header;
+    animation-duration: 4s;
+}
+
+@keyframes header {
+    0% {background-color:aquamarine;}
+    50%  {background-color: beige;} 
+    100% { background-color:bisque;}
+}
