@@ -1,22 +1,149 @@
 
 <!DOCTYPE html>
-<head> Media </head>
+<head> 
+
+    <div class="header1"> Creative Minds</div>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+</div>    
+            
+<div class="topnav">
+    <a href="index.html" >Home</a>
+    <a href="process.html">About</a>
+    <a href="tags.html">My Process</a>
+    <a href="media.html">Photography</a>
+</div>
+
 <body>
-    <figure>
-        <img src="green dog.jpg" alt="green dog" style="width:20%">
-        <figcaption>Fig.1 - French Bulldog. </figcaption>
-    </figure>
+
+    <div class="filmPhotography"><h2 style="text-align:center">Film Photography</h2></div>
+
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="jims.JPG" style="width:50%">
+      </div>
     
-    <audio controls>
-        <source src="Six Seasons - Unicorn Heads.mp3" type="audio/mp3">
-       </audio>
-      
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="leak.jpg" style="width:50%">
+      </div>
     
-   <video width="400"height="500" controls>
-        <source src="IMG 7209.mp4" type="video/mp4">
-    </video>
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="ground.jpg" style="width:50%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="dark.JPG" style="width:50%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="building.jpg" style="width:50%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="furniture.jpg" style="width:50%">
+      </div>
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="jims.JPG" style="width:100%" onclick="currentSlide(1)" alt="Jim's Store">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="leak.jpg" style="width:100%" onclick="currentSlide(2)" alt="Leak">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="ground.jpg" style="width:100%" onclick="currentSlide(3)" alt="Abandoned Building">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="dark.JPG" style="width:100%" onclick="currentSlide(4)" alt="Graffiti">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="building.jpg" style="width:100%" onclick="currentSlide(5)" alt="Vacant Building">
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="furniture.jpg" style="width:100%" onclick="currentSlide(6)" alt="Furniture Sign">
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+
+
 </body>
 
-<footer> End of Media </footer>
+<footer> 
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    
+    <body>
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="https://www.instagram.com/alyssawissinger/"><i class="icon ion-social-instagram"></i></a><a href="https://twitter.com/alyssawissinger"><i class="icon ion-social-twitter"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">Home</a></li>
+                    <li class="list-inline-item"><a href="https://alyssawissinger.wordpress.com/">Portfolio</a></li>
+                    <li class="list-inline-item"><a href="https://alyssawissinger.wordpress.com/about/">About Me</a></li>
+                    <li class="list-inline-item"><a href="https://alyssawissinger.wordpress.com/contact/">Contact</a></li>
+                </ul>
+                <p class="copyright">Creative Minds © 2021</p>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</footer>
 
 </html>
